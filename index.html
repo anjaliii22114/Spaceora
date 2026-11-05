@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spaceora – Astronomy for Beginners, Solar System, Stargazing and Space Missions</title>
+<meta name="description" content="Spaceora is an information site about space and astronomy: learn the solar system, how to stargaze safely, how to choose binoculars or a telescope, and the story of major space missions.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.YOURDOMAIN.com/">
+<meta property="og:title" content="Spaceora – Astronomy for Beginners, Solar System, Stargazing and Space Missions">
+<meta property="og:description" content="Beginner-friendly guides to the solar system, stargazing and space exploration.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.YOURDOMAIN.com/">
+
+<!-- ===== GOOGLE ADSENSE CODE: yahan apna AdSense script paste karein ===== -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+<!-- ======================================================================= -->
+
+<!-- Google Analytics (optional): yahan GA4 code paste karein -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Spaceora","url":"https://www.YOURDOMAIN.com/","description":"Astronomy for beginners, solar system, stargazing and space missions."}
+</script>
+
+<style>
+:root{
+  --ink:#171B3B; --bg:#F6F7FB; --paper:#FFFFFF; --aurora:#0E9F8E; --violet:#6D4AE0;
+  --rose:#E04C8A; --gold:#D9930A; --night:#0C1030; --muted:#585F87; --line:#DADEF0;
+  --head:'Syne','Trebuchet MS',Arial,sans-serif;
+  --body:'Manrope',Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{--ink:#E8EBFF; --bg:#0A0D26; --paper:#131838; --muted:#A9B1DC; --line:#2A3269; --aurora:#3FD9C6; --violet:#A28BFF; --rose:#FF7DB1; --gold:#FFC247;}
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);font-size:1.08rem;line-height:1.78;color:var(--ink);background:var(--bg)}
+a{color:var(--violet)}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* header */
+header{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:74px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-family:var(--head);font-weight:800;font-size:1.7rem;letter-spacing:-.5px}
+.logo span{color:var(--violet)}
+nav ul{list-style:none;display:flex;gap:22px;flex-wrap:wrap}
+nav a{font-weight:700;font-size:.95rem;text-decoration:none;color:var(--ink)}
+nav a:hover{color:var(--rose)}
+
+/* hero: aurora bands and a crescent moon */
+.hero{background:var(--night);color:#fff;padding:96px 0 84px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-20% -10% auto -10%;height:120%;background:
+ radial-gradient(60% 40% at 25% 30%,rgba(14,159,142,.55),transparent 70%),
+ radial-gradient(50% 40% at 70% 20%,rgba(109,74,224,.55),transparent 70%),
+ radial-gradient(40% 30% at 90% 60%,rgba(224,76,138,.4),transparent 70%);
+ filter:blur(30px)}
+.moon{position:absolute;right:9%;top:50%;width:190px;height:190px;border-radius:50%;transform:translateY(-50%);background:#EEF1FF;box-shadow:0 0 70px rgba(238,241,255,.45)}
+.moon::after{content:"";position:absolute;left:-34px;top:-12px;width:190px;height:190px;border-radius:50%;background:var(--night);box-shadow:0 0 40px 10px rgba(12,16,48,.9)}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-family:var(--head);font-weight:800;font-size:clamp(2.4rem,6.2vw,4.6rem);line-height:1.02;letter-spacing:-1.5px;max-width:13ch}
+.hero p{max-width:58ch;margin-top:22px;color:#D9DEFF}
+.btn{display:inline-block;margin-top:30px;background:#fff;color:#171B3B;font-weight:700;padding:14px 30px;border-radius:999px;text-decoration:none}
+.btn:hover{background:#FFD98A}
+.tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
+.tags a{font-size:.92rem;font-weight:500;color:#fff;border:1px solid #5560A3;padding:5px 16px;border-radius:999px;text-decoration:none}
+.tags a:hover{border-color:#FFD98A;color:#FFD98A}
+
+/* layout */
+main{padding:56px 0}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:48px}
+article.section{margin-bottom:56px;scroll-margin-top:96px}
+h2{font-family:var(--head);font-weight:800;font-size:clamp(1.7rem,3vw,2.3rem);line-height:1.15;letter-spacing:-.5px;margin-bottom:16px}
+h2::after{content:"";display:block;width:70px;height:5px;margin-top:10px;border-radius:5px;background:linear-gradient(90deg,var(--aurora),var(--violet),var(--rose))}
+h3{font-family:var(--head);font-size:1.2rem;margin:24px 0 6px}
+p{margin-bottom:16px}
+ul.list,ol.list{margin:0 0 18px 24px}
+ul.list li,ol.list li{margin-bottom:8px}
+.box{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin:22px 0}
+.tip{border-left:6px solid var(--gold)}
+.warn{border-left:6px solid var(--rose)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:18px 0}
+.cards .box{margin:0;border-top:5px solid var(--aurora)}
+.cards .box:nth-child(3n+2){border-top-color:var(--violet)}
+.cards .box:nth-child(3n){border-top-color:var(--rose)}
+.cards h3{margin-top:0}
+table{width:100%;border-collapse:collapse;margin:18px 0;font-size:1rem}
+.scroll{overflow-x:auto}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--head);background:var(--paper)}
+
+/* ads: clearly labelled, never disguised as content */
+.ad{margin:36px 0;text-align:center}
+.ad small{display:block;font-size:.76rem;color:var(--muted);margin-bottom:6px}
+.ad .slot{min-height:120px;border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);border-radius:10px}
+
+/* sidebar */
+aside .box h3{margin-top:0}
+aside ul{list-style:none}
+aside li{margin-bottom:10px;font-weight:500;font-size:1rem}
+.sticky{position:sticky;top:100px}
+
+/* faq */
+details{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 20px;margin-bottom:12px}
+summary{font-weight:700;cursor:pointer}
+details p{margin:12px 0 0}
+
+/* disclaimer */
+.disclaimer{background:var(--paper);border:2px solid var(--gold);border-radius:16px;padding:26px 28px;font-size:1rem}
+.disclaimer h2::after{display:none}
+
+/* footer */
+footer{background:var(--night);color:#BFC6EE;padding:48px 0 28px;font-size:1rem}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px}
+footer h4{font-family:var(--head);color:#fff;font-size:1.1rem;margin-bottom:12px}
+footer a{color:#BFC6EE;text-decoration:none}
+footer a:hover{color:#FFD98A}
+footer ul{list-style:none}
+footer li{margin-bottom:8px}
+.copy{border-top:1px solid #232B63;margin-top:32px;padding-top:20px;text-align:center;font-size:.9rem}
+
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr}
+  .sticky{position:static}
+  .fgrid{grid-template-columns:1fr}
+  header{position:static}
+  .moon{opacity:.35}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="/" aria-label="Spaceora home">
+      <svg width="46" height="46" viewBox="0 0 64 64" aria-hidden="true">
+        <defs><linearGradient id="sg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0E9F8E"/><stop offset="1" stop-color="#6D4AE0"/></linearGradient></defs>
+        <circle cx="32" cy="32" r="29" fill="url(#sg)"/>
+        <path d="M40 14a18 18 0 1 0 0 36 14 14 0 1 1 0-36z" fill="#fff"/>
+        <path d="M47 18l1.8 4.2 4.2 1.8-4.2 1.8L47 30l-1.8-4.2L41 24l4.2-1.8z" fill="#FFD98A"/>
+      </svg>
+      Space<span>ora</span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#solar">Solar System</a></li>
+        <li><a href="#stargazing">Stargazing</a></li>
+        <li><a href="#telescope">Telescopes</a></li>
+        <li><a href="#missions">Space Missions</a></li>
+        <li><a href="#myths">Myths</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <span class="moon" aria-hidden="true"></span>
+  <div class="wrap">
+    <h1>Look up. Space is closer than you think.</h1>
+    <p>Spaceora is an independent information site about space and astronomy. We explain the solar system, how to stargaze safely, how to choose binoculars or a telescope and the story of the missions that took us beyond Earth, all in clear language for beginners, students and curious families.</p>
+    <a class="btn" href="#solar">Begin the journey</a>
+    <div class="tags">
+      <a href="#solar">Planets</a>
+      <a href="#stargazing">Night sky</a>
+      <a href="#telescope">First telescope</a>
+      <a href="#missions">Space history</a>
+    </div>
+  </div>
+</section>
+
+<main>
+<div class="wrap layout">
+
+<div class="content">
+
+  <article class="section" id="solar">
+    <h2>Our solar system at a glance</h2>
+    <p>The solar system is made up of the Sun, which is a star, eight planets, their moons, and countless smaller bodies such as dwarf planets, asteroids and comets. The Sun holds nearly all of the system's mass, and its gravity keeps everything in orbit. Sunlight takes about 8 minutes and 20 seconds to reach Earth.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Planet</th><th>Type</th><th>A simple fact</th></tr></thead>
+      <tbody>
+        <tr><td>Mercury</td><td>Rocky</td><td>The smallest planet and the closest to the Sun</td></tr>
+        <tr><td>Venus</td><td>Rocky</td><td>Has the hottest surface of any planet, around 465 °C, because of its thick atmosphere</td></tr>
+        <tr><td>Earth</td><td>Rocky</td><td>The only place known to support life</td></tr>
+        <tr><td>Mars</td><td>Rocky</td><td>Looks red because of iron oxide, or rust, in its soil</td></tr>
+        <tr><td>Jupiter</td><td>Gas giant</td><td>The largest planet, with a giant storm called the Great Red Spot</td></tr>
+        <tr><td>Saturn</td><td>Gas giant</td><td>Famous for its bright system of rings</td></tr>
+        <tr><td>Uranus</td><td>Ice giant</td><td>Spins tilted almost on its side</td></tr>
+        <tr><td>Neptune</td><td>Ice giant</td><td>The farthest planet from the Sun, with strong winds</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>The Moon is Earth's only natural satellite and lies about 384,400 kilometres away on average. It is responsible for the main ocean tides and shows different phases as it orbits Earth.</p>
+  </article>
+
+  <article class="section" id="stargazing">
+    <h2>Stargazing for beginners</h2>
+    <p>You do not need any equipment to begin. A clear night, a dark spot and a little patience reveal the Moon, bright planets and many stars.</p>
+    <h3>Simple steps</h3>
+    <ol class="list">
+      <li><strong>Pick a dark place</strong> away from street lights, such as a rooftop, field or hill, and check that the sky will be clear.</li>
+      <li><strong>Let your eyes adjust</strong> for 20 to 30 minutes. Avoid looking at bright phone screens, or switch to a red light.</li>
+      <li><strong>Start with the Moon.</strong> Its craters are easy to see even with binoculars.</li>
+      <li><strong>Find bright planets.</strong> Planets look like steady, bright dots that do not twinkle as much as stars. Free sky-map apps help you identify them.</li>
+      <li><strong>Learn a few constellations</strong> such as Orion or the Big Dipper (Saptarishi), then use them to find other stars.</li>
+    </ol>
+    <div class="box tip"><strong>Tip:</strong> new Moon nights are best for faint objects like the Milky Way, while a full Moon is bright and washes out fainter stars.</div>
+    <div class="box warn"><strong>Safety warning:</strong> never look at the Sun directly, and never with binoculars or a telescope unless they have a proper certified solar filter. Doing so can cause permanent eye damage. For solar eclipses, use eclipse glasses that meet the ISO 12312-2 standard.</div>
+  </article>
+
+  <div class="ad" aria-label="Advertisement">
+    <small>Advertisement</small>
+    <!-- ===== ADSENSE AD UNIT 1: yahan apna ad code paste karein ===== -->
+    <!--
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1111111111" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+    <div class="slot">Ad space</div>
+  </div>
+
+  <article class="section" id="telescope">
+    <h2>Binoculars and telescopes: what to choose</h2>
+    <p>Many beginners buy a telescope too early. Binoculars are cheaper, easier to use and a great first step.</p>
+    <div class="cards">
+      <div class="box"><h3>Binoculars</h3><p>Models such as 7x50 or 10x50 show lunar craters, bright star clusters and Jupiter's moons. They are portable and simple.</p></div>
+      <div class="box"><h3>Reflector telescope</h3><p>Uses a mirror to gather light and gives good views for the price. A simple Dobsonian mount is easy for beginners.</p></div>
+      <div class="box"><h3>Refractor telescope</h3><p>Uses lenses and needs little maintenance, making it popular for the Moon and planets, though larger sizes cost more.</p></div>
+    </div>
+    <h3>What matters most</h3>
+    <ul class="list">
+      <li><strong>Aperture</strong>, the size of the main lens or mirror, decides how much light you collect and matters more than magnification.</li>
+      <li><strong>A stable mount</strong> keeps the view steady. A wobbly mount ruins even a good telescope.</li>
+      <li><strong>Avoid toy telescopes</strong> that advertise extreme magnification, since they usually give poor, blurry views.</li>
+      <li><strong>Try before you buy</strong> by visiting a local astronomy club or a public star party.</li>
+    </ul>
+  </article>
+
+  <article class="section" id="missions">
+    <h2>Milestones of space exploration</h2>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Year</th><th>Milestone</th></tr></thead>
+      <tbody>
+        <tr><td>1957</td><td>Sputnik 1 becomes the first artificial satellite in orbit.</td></tr>
+        <tr><td>1961</td><td>Yuri Gagarin becomes the first human in space.</td></tr>
+        <tr><td>1969</td><td>Apollo 11 lands the first humans on the Moon.</td></tr>
+        <tr><td>1990</td><td>The Hubble Space Telescope is launched into Earth orbit.</td></tr>
+        <tr><td>1998</td><td>Assembly of the International Space Station begins.</td></tr>
+        <tr><td>2008</td><td>India's Chandrayaan-1 orbits the Moon.</td></tr>
+        <tr><td>2014</td><td>India's Mangalyaan (Mars Orbiter Mission) enters orbit around Mars.</td></tr>
+        <tr><td>2021</td><td>The James Webb Space Telescope is launched.</td></tr>
+        <tr><td>2023</td><td>Chandrayaan-3 lands near the Moon's south polar region.</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Space exploration continues to change quickly, with new missions, discoveries and commercial launches announced regularly. For the latest news, check the official websites of space agencies such as ISRO, NASA and ESA.</p>
+  </article>
+
+  <div class="ad" aria-label="Advertisement">
+    <small>Advertisement</small>
+    <!-- ===== ADSENSE AD UNIT 2: yahan apna ad code paste karein ===== -->
+    <!--
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="2222222222" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+    <div class="slot">Ad space</div>
+  </div>
+
+  <article class="section" id="myths">
+    <h2>Common space myths, explained</h2>
+    <ul class="list">
+      <li><strong>"Seasons happen because Earth is closer to the Sun."</strong> Seasons come from the tilt of Earth's axis, not from distance.</li>
+      <li><strong>"The Moon has a permanently dark side."</strong> The Moon has a far side that we never see from Earth, yet it receives sunlight just like the near side.</li>
+      <li><strong>"You can hear explosions in space."</strong> Sound needs a medium such as air to travel, and space is almost a vacuum.</li>
+      <li><strong>"Stars twinkle because they flash."</strong> Twinkling is caused by Earth's atmosphere bending starlight.</li>
+      <li><strong>"Astronomy needs expensive equipment."</strong> Your eyes, a sky map and a dark sky are enough to begin.</li>
+    </ul>
+  </article>
+
+  <article class="section" id="faq">
+    <h2>Frequently asked questions</h2>
+    <details>
+      <summary>What is the best time of year to stargaze?</summary>
+      <p>Clear, dry nights are best, and the season depends on where you live. Winter and post-monsoon skies are often clearer in many regions, but check your local weather forecast.</p>
+    </details>
+    <details>
+      <summary>Can I see planets without a telescope?</summary>
+      <p>Yes. Venus, Mars, Jupiter and Saturn can often be seen with the naked eye when they are above the horizon. A sky-map app shows where to look.</p>
+    </details>
+    <details>
+      <summary>Is astronomy a good subject for children?</summary>
+      <p>Absolutely. Stargazing, moon-phase diaries and simple models encourage curiosity and science skills. Always supervise outdoor night activity and never allow children to look at the Sun.</p>
+    </details>
+    <details>
+      <summary>Does Spaceora sell telescopes or run tours?</summary>
+      <p>No. Spaceora is an informational website only. We do not sell equipment, run tours or offer paid courses.</p>
+    </details>
+  </article>
+
+  <article class="section" id="about">
+    <h2>About Spaceora</h2>
+    <p>Spaceora was created to make astronomy friendly and accessible. We write original, carefully checked guides, avoid sensational claims, and update our pages when we find mistakes or when new discoveries change the facts.</p>
+    <p>Questions, corrections or suggestions are welcome. Email us at <a href="mailto:contact@YOURDOMAIN.com">contact@YOURDOMAIN.com</a>.</p>
+  </article>
+
+  <section class="disclaimer" id="disclaimer" aria-labelledby="disc-title">
+    <h2 id="disc-title">Disclaimer</h2>
+    <p>The content on Spaceora is provided for general information and educational purposes only. Scientific explanations are simplified, and scientific knowledge changes as new discoveries are made. For authoritative and up-to-date data, consult official sources such as space agencies and professional observatories.</p>
+    <p>Stargazing and outdoor night activities involve risks. Never look directly at the Sun without proper certified protection, observe from safe places, and supervise children. Spaceora is not liable for any injury, loss or damage arising from the use of this information.</p>
+    <p>We try to keep information accurate but cannot guarantee that it is complete or current. Spaceora is not affiliated with or endorsed by any space agency, company or brand mentioned, and all names and trademarks belong to their respective owners. External links and advertisements, including those served by third-party networks such as Google AdSense, are shown for convenience and are clearly labelled. We do not control their content.</p>
+  </section>
+
+</div>
+
+<aside>
+  <div class="sticky">
+    <div class="box">
+      <h3>On this page</h3>
+      <ul>
+        <li><a href="#solar">Solar system</a></li>
+        <li><a href="#stargazing">Stargazing</a></li>
+        <li><a href="#telescope">Telescopes</a></li>
+        <li><a href="#missions">Space missions</a></li>
+        <li><a href="#myths">Space myths</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#disclaimer">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div class="ad">
+      <small>Advertisement</small>
+      <!-- ===== ADSENSE AD UNIT 3 (sidebar): yahan apna ad code paste karein ===== -->
+      <div class="slot" style="min-height:250px">Ad space</div>
+    </div>
+  </div>
+</aside>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>Spaceora</h4>
+        <p>Independent information about astronomy, the solar system, stargazing and space exploration. Educational content only.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#solar">Solar system</a></li>
+          <li><a href="#stargazing">Stargazing</a></li>
+          <li><a href="#telescope">Telescopes</a></li>
+          <li><a href="#missions">Space missions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <!-- Apne pages ke sahi link yahan lagayein -->
+          <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/terms.html">Terms and Conditions</a></li>
+          <li><a href="#disclaimer">Disclaimer</a></li>
+          <li><a href="#about">About / Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">&copy; <span id="yr">2026</span> Spaceora. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
